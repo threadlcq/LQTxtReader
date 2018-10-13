@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542F1337431F1252E6B61E1C /* Pods_LQTxtReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0774FF5609BC77184139CF /* Pods_LQTxtReader.framework */; };
+		9D015226214E11A800855B20 /* LQReadRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D015225214E11A800855B20 /* LQReadRecordModel.swift */; };
+		9D015228214E11D700855B20 /* LQReadMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D015227214E11D700855B20 /* LQReadMarkModel.swift */; };
+		9D0E2A922153C2BE003E35C3 /* LQBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E2A912153C2BE003E35C3 /* LQBookController.swift */; };
+		9D0E2A962154C1C4003E35C3 /* LQReadContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E2A952154C1C4003E35C3 /* LQReadContent.swift */; };
+		9D246C79216ED0360086784C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D246C78216ED0360086784C /* UIViewController+Extension.swift */; };
+		9D246C7C216ED19B0086784C /* LQBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D246C7B216ED19B0086784C /* LQBaseViewController.swift */; };
+		9D246C8E216EE53D0086784C /* LQChapterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D246C8D216EE53D0086784C /* LQChapterMenu.swift */; };
+		9D246C90216EE99A0086784C /* LQSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D246C8F216EE99A0086784C /* LQSegmentedControl.swift */; };
+		9D246C92216F3AD10086784C /* LQNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D246C91216F3AD10086784C /* LQNotification.swift */; };
+		9D2CE786215DFDF2006CF792 /* LQChapterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2CE785215DFDF2006CF792 /* LQChapterParser.swift */; };
+		9D4B5F192165F6C30065CC25 /* UINavigationController+LQStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4B5F182165F6C30065CC25 /* UINavigationController+LQStatusBarStyle.swift */; };
+		9D508D9421489B890055403D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508D9321489B890055403D /* AppDelegate.swift */; };
+		9D508D9621489B890055403D /* LQReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508D9521489B890055403D /* LQReadViewController.swift */; };
+		9D508D9921489B890055403D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D508D9721489B890055403D /* Main.storyboard */; };
+		9D508D9B21489B8B0055403D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D508D9A21489B8B0055403D /* Assets.xcassets */; };
+		9D508D9E21489B8B0055403D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D508D9C21489B8B0055403D /* LaunchScreen.storyboard */; };
+		9D508DA721489BD30055403D /* LQReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508DA621489BD30055403D /* LQReaderView.swift */; };
+		9D508DF42149538C0055403D /* LQReadConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508DF32149538C0055403D /* LQReadConfigure.swift */; };
+		9D508DF8214955890055403D /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508DF7214955890055403D /* NSObject+Extension.swift */; };
+		9D508DFB214956360055403D /* LQUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508DFA214956360055403D /* LQUserDefaults.swift */; };
+		9D508DFD2149599A0055403D /* LQGlobalProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508DFC2149599A0055403D /* LQGlobalProperty.swift */; };
+		9D508E0021495A160055403D /* LQGlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508DFF21495A160055403D /* LQGlobalMethod.swift */; };
+		9D508E0221495A580055403D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D508E0121495A580055403D /* String+Extension.swift */; };
+		9D52A7B62170237C0083C6B9 /* LQTurnpageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52A7B52170237C0083C6B9 /* LQTurnpageBar.swift */; };
+		9D52A7B821703BA90083C6B9 /* LQProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52A7B721703BA90083C6B9 /* LQProgressBar.swift */; };
+		9D52A7BC217087170083C6B9 /* LQVerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52A7BB217087170083C6B9 /* LQVerticalViewController.swift */; };
+		9D52A7BE2170DD8D0083C6B9 /* LQImageScrollbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52A7BD2170DD8D0083C6B9 /* LQImageScrollbar.swift */; };
+		9D52A7C12170E8860083C6B9 /* LQSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52A7C02170E8860083C6B9 /* LQSliderView.swift */; };
+		9D7607C1216E208300F47464 /* LQFilterSliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7607C0216E208300F47464 /* LQFilterSliderControl.swift */; };
+		9D8988A2216B4FF60047CF9C /* LQToolBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988A1216B4FF60047CF9C /* LQToolBarController.swift */; };
+		9D8988A5216C3D4E0047CF9C /* LQToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988A4216C3D4E0047CF9C /* LQToolBar.swift */; };
+		9D8988A7216C42970047CF9C /* LQToolBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988A6216C42970047CF9C /* LQToolBarDelegate.swift */; };
+		9D8988A9216C441F0047CF9C /* LQOperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988A8216C441F0047CF9C /* LQOperationButton.swift */; };
+		9D8988AB216C863E0047CF9C /* LQButtonOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988AA216C863E0047CF9C /* LQButtonOperationFactory.swift */; };
+		9D8988AD216C92D60047CF9C /* LQToolbarConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988AC216C92D60047CF9C /* LQToolbarConstant.swift */; };
+		9D8988AF216CCA9A0047CF9C /* LQBookSettingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988AE216CCA9A0047CF9C /* LQBookSettingBar.swift */; };
+		9D8988B1216CD66D0047CF9C /* LQBookSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8988B0216CD66D0047CF9C /* LQBookSlider.swift */; };
+		9D8D552D2164630D00D5C629 /* LQStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D552C2164630D00D5C629 /* LQStatusView.swift */; };
+		9D8D552F2164679900D5C629 /* LQBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D552E2164679900D5C629 /* LQBatteryView.swift */; };
+		9D8D55432164FBDE00D5C629 /* MBProgressHUD+LQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D55422164FBDE00D5C629 /* MBProgressHUD+LQ.m */; };
+		9D8D55462165081000D5C629 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D55452165081000D5C629 /* UIColor+Extension.swift */; };
+		9DC937AB216071B500E71A1A /* 琅琊榜.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9379E216071B500E71A1A /* 琅琊榜.txt */; };
+		9DC937AC216071B500E71A1A /* 鬼吹灯.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC9379F216071B500E71A1A /* 鬼吹灯.txt */; };
+		9DC937AD216071B500E71A1A /* 厚黑学.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A0216071B500E71A1A /* 厚黑学.txt */; };
+		9DC937AE216071B500E71A1A /* 《城春草木深》作者：余念一.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A1216071B500E71A1A /* 《城春草木深》作者：余念一.txt */; };
+		9DC937AF216071B500E71A1A /* 曾国藩三部曲.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A2216071B500E71A1A /* 曾国藩三部曲.txt */; };
+		9DC937B0216071B500E71A1A /* 《欢乐颂》作者：ane.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A3216071B500E71A1A /* 《欢乐颂》作者：ane.txt */; };
+		9DC937B1216071B500E71A1A /* 平凡的世界.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A4216071B500E71A1A /* 平凡的世界.txt */; };
+		9DC937B2216071B500E71A1A /* 地狱的第19层.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A5216071B500E71A1A /* 地狱的第19层.txt */; };
+		9DC937B3216071B500E71A1A /* 《相思闲》作者：琴瑟花.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A6216071B500E71A1A /* 《相思闲》作者：琴瑟花.txt */; };
+		9DC937B4216071B500E71A1A /* 曾国藩家书.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A7216071B500E71A1A /* 曾国藩家书.txt */; };
+		9DC937B5216071B500E71A1A /* 求魔.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A8216071B500E71A1A /* 求魔.txt */; };
+		9DC937B6216071B500E71A1A /* 鬼吹灯1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937A9216071B500E71A1A /* 鬼吹灯1.txt */; };
+		9DC937B7216071B500E71A1A /* 《诛仙》（校对版全本）作者：萧鼎.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DC937AA216071B500E71A1A /* 《诛仙》（校对版全本）作者：萧鼎.txt */; };
+		9DC937B92160722300E71A1A /* LQMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC937B82160722300E71A1A /* LQMainViewController.swift */; };
+		9DC937BB216072EF00E71A1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC937BA216072EF00E71A1A /* UIView+Extension.swift */; };
+		9DC937BD2160737A00E71A1A /* LQMainCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC937BC2160737A00E71A1A /* LQMainCollectionCell.swift */; };
+		9DE0BE3C214CB18700FE785E /* LQReadChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE0BE3B214CB18700FE785E /* LQReadChapterModel.swift */; };
+		9DFCF20D215F6372008E86F7 /* LQHorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCF20C215F6372008E86F7 /* LQHorizontalViewController.swift */; };
+		9DFCF210215F6553008E86F7 /* LQTxtHorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCF20F215F6553008E86F7 /* LQTxtHorViewController.swift */; };
+		9DFCF212215F67F1008E86F7 /* LQReadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFCF211215F67F1008E86F7 /* LQReadPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B0774FF5609BC77184139CF /* Pods_LQTxtReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LQTxtReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F075E70BF6D9A7A8C25404 /* Pods-LQTxtReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTxtReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQTxtReader/Pods-LQTxtReader.release.xcconfig"; sourceTree = "<group>"; };
+		9D015225214E11A800855B20 /* LQReadRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadRecordModel.swift; sourceTree = "<group>"; };
+		9D015227214E11D700855B20 /* LQReadMarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadMarkModel.swift; sourceTree = "<group>"; };
+		9D0E2A912153C2BE003E35C3 /* LQBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQBookController.swift; sourceTree = "<group>"; };
+		9D0E2A952154C1C4003E35C3 /* LQReadContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadContent.swift; sourceTree = "<group>"; };
+		9D246C78216ED0360086784C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9D246C7B216ED19B0086784C /* LQBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQBaseViewController.swift; sourceTree = "<group>"; };
+		9D246C8D216EE53D0086784C /* LQChapterMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQChapterMenu.swift; sourceTree = "<group>"; };
+		9D246C8F216EE99A0086784C /* LQSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQSegmentedControl.swift; sourceTree = "<group>"; };
+		9D246C91216F3AD10086784C /* LQNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQNotification.swift; sourceTree = "<group>"; };
+		9D2CE785215DFDF2006CF792 /* LQChapterParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQChapterParser.swift; sourceTree = "<group>"; };
+		9D4B5F182165F6C30065CC25 /* UINavigationController+LQStatusBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+LQStatusBarStyle.swift"; sourceTree = "<group>"; };
+		9D508D9021489B890055403D /* LQTxtReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQTxtReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D508D9321489B890055403D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D508D9521489B890055403D /* LQReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadViewController.swift; sourceTree = "<group>"; };
+		9D508D9821489B890055403D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D508D9A21489B8B0055403D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D508D9D21489B8B0055403D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D508D9F21489B8B0055403D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D508DA621489BD30055403D /* LQReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReaderView.swift; sourceTree = "<group>"; };
+		9D508DF32149538C0055403D /* LQReadConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadConfigure.swift; sourceTree = "<group>"; };
+		9D508DF7214955890055403D /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		9D508DFA214956360055403D /* LQUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQUserDefaults.swift; sourceTree = "<group>"; };
+		9D508DFC2149599A0055403D /* LQGlobalProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQGlobalProperty.swift; sourceTree = "<group>"; };
+		9D508DFF21495A160055403D /* LQGlobalMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQGlobalMethod.swift; sourceTree = "<group>"; };
+		9D508E0121495A580055403D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9D52A7B52170237C0083C6B9 /* LQTurnpageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQTurnpageBar.swift; sourceTree = "<group>"; };
+		9D52A7B721703BA90083C6B9 /* LQProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQProgressBar.swift; sourceTree = "<group>"; };
+		9D52A7BB217087170083C6B9 /* LQVerticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQVerticalViewController.swift; sourceTree = "<group>"; };
+		9D52A7BD2170DD8D0083C6B9 /* LQImageScrollbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQImageScrollbar.swift; sourceTree = "<group>"; };
+		9D52A7C02170E8860083C6B9 /* LQSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQSliderView.swift; sourceTree = "<group>"; };
+		9D7607C0216E208300F47464 /* LQFilterSliderControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQFilterSliderControl.swift; sourceTree = "<group>"; };
+		9D8988A1216B4FF60047CF9C /* LQToolBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQToolBarController.swift; sourceTree = "<group>"; };
+		9D8988A4216C3D4E0047CF9C /* LQToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQToolBar.swift; sourceTree = "<group>"; };
+		9D8988A6216C42970047CF9C /* LQToolBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQToolBarDelegate.swift; sourceTree = "<group>"; };
+		9D8988A8216C441F0047CF9C /* LQOperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQOperationButton.swift; sourceTree = "<group>"; };
+		9D8988AA216C863E0047CF9C /* LQButtonOperationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQButtonOperationFactory.swift; sourceTree = "<group>"; };
+		9D8988AC216C92D60047CF9C /* LQToolbarConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQToolbarConstant.swift; sourceTree = "<group>"; };
+		9D8988AE216CCA9A0047CF9C /* LQBookSettingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQBookSettingBar.swift; sourceTree = "<group>"; };
+		9D8988B0216CD66D0047CF9C /* LQBookSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQBookSlider.swift; sourceTree = "<group>"; };
+		9D8D552C2164630D00D5C629 /* LQStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQStatusView.swift; sourceTree = "<group>"; };
+		9D8D552E2164679900D5C629 /* LQBatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQBatteryView.swift; sourceTree = "<group>"; };
+		9D8D55412164FBDE00D5C629 /* MBProgressHUD+LQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+LQ.h"; sourceTree = "<group>"; };
+		9D8D55422164FBDE00D5C629 /* MBProgressHUD+LQ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+LQ.m"; sourceTree = "<group>"; };
+		9D8D55452165081000D5C629 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9DC9379E216071B500E71A1A /* 琅琊榜.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "琅琊榜.txt"; sourceTree = "<group>"; };
+		9DC9379F216071B500E71A1A /* 鬼吹灯.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鬼吹灯.txt"; sourceTree = "<group>"; };
+		9DC937A0216071B500E71A1A /* 厚黑学.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "厚黑学.txt"; sourceTree = "<group>"; };
+		9DC937A1216071B500E71A1A /* 《城春草木深》作者：余念一.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "《城春草木深》作者：余念一.txt"; sourceTree = "<group>"; };
+		9DC937A2216071B500E71A1A /* 曾国藩三部曲.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "曾国藩三部曲.txt"; sourceTree = "<group>"; };
+		9DC937A3216071B500E71A1A /* 《欢乐颂》作者：ane.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "《欢乐颂》作者：ane.txt"; sourceTree = "<group>"; };
+		9DC937A4216071B500E71A1A /* 平凡的世界.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "平凡的世界.txt"; sourceTree = "<group>"; };
+		9DC937A5216071B500E71A1A /* 地狱的第19层.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "地狱的第19层.txt"; sourceTree = "<group>"; };
+		9DC937A6216071B500E71A1A /* 《相思闲》作者：琴瑟花.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "《相思闲》作者：琴瑟花.txt"; sourceTree = "<group>"; };
+		9DC937A7216071B500E71A1A /* 曾国藩家书.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "曾国藩家书.txt"; sourceTree = "<group>"; };
+		9DC937A8216071B500E71A1A /* 求魔.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "求魔.txt"; sourceTree = "<group>"; };
+		9DC937A9216071B500E71A1A /* 鬼吹灯1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "鬼吹灯1.txt"; sourceTree = "<group>"; };
+		9DC937AA216071B500E71A1A /* 《诛仙》（校对版全本）作者：萧鼎.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "《诛仙》（校对版全本）作者：萧鼎.txt"; sourceTree = "<group>"; };
+		9DC937B82160722300E71A1A /* LQMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQMainViewController.swift; sourceTree = "<group>"; };
+		9DC937BA216072EF00E71A1A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9DC937BC2160737A00E71A1A /* LQMainCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQMainCollectionCell.swift; sourceTree = "<group>"; };
+		9DE0BE3B214CB18700FE785E /* LQReadChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadChapterModel.swift; sourceTree = "<group>"; };
+		9DE0BE3D214CBFC700FE785E /* LQTxtReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LQTxtReader-Bridging-Header.h"; sourceTree = "<group>"; };
+		9DFCF20C215F6372008E86F7 /* LQHorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQHorizontalViewController.swift; sourceTree = "<group>"; };
+		9DFCF20F215F6553008E86F7 /* LQTxtHorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQTxtHorViewController.swift; sourceTree = "<group>"; };
+		9DFCF211215F67F1008E86F7 /* LQReadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LQReadPage.swift; sourceTree = "<group>"; };
+		BD6ED0DD1024BEDBF2822151 /* Pods-LQTxtReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQTxtReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQTxtReader/Pods-LQTxtReader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D508D8D21489B890055403D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542F1337431F1252E6B61E1C /* Pods_LQTxtReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		498EA3A2CD2BAA761CCE7369 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B0774FF5609BC77184139CF /* Pods_LQTxtReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D508D8721489B890055403D = {
+			isa = PBXGroup;
+			children = (
+				9D508D9221489B890055403D /* LQTxtReader */,
+				9D508D9121489B890055403D /* Products */,
+				FA8A8FE0433C74CA2A23B548 /* Pods */,
+				498EA3A2CD2BAA761CCE7369 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D508D9121489B890055403D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D508D9021489B890055403D /* LQTxtReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D508D9221489B890055403D /* LQTxtReader */ = {
+			isa = PBXGroup;
+			children = (
+				9D8D55442165010D00D5C629 /* ViewController */,
+				9D8D55402164FBB000D5C629 /* ThirdLib */,
+				9DC9379D216071B500E71A1A /* TxtBook */,
+				9DE0BE38214CB12900FE785E /* Model */,
+				9D508DF52149555A0055403D /* Other */,
+				9D508DF2214953690055403D /* Controller */,
+				9D508DA521489B950055403D /* View */,
+				9D508D9321489B890055403D /* AppDelegate.swift */,
+				9DE0BE3D214CBFC700FE785E /* LQTxtReader-Bridging-Header.h */,
+				9D508D9721489B890055403D /* Main.storyboard */,
+				9D508D9A21489B8B0055403D /* Assets.xcassets */,
+				9D508D9C21489B8B0055403D /* LaunchScreen.storyboard */,
+				9D508D9F21489B8B0055403D /* Info.plist */,
+			);
+			path = LQTxtReader;
+			sourceTree = "<group>";
+		};
+		9D508DA521489B950055403D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D52A7BF2170DD970083C6B9 /* ScrollBar */,
+				9D8988A3216C3D310047CF9C /* ToolBar */,
+				9D508DA621489BD30055403D /* LQReaderView.swift */,
+				9D8D552C2164630D00D5C629 /* LQStatusView.swift */,
+				9D8D552E2164679900D5C629 /* LQBatteryView.swift */,
+				9D246C8F216EE99A0086784C /* LQSegmentedControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D508DF2214953690055403D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D508DF32149538C0055403D /* LQReadConfigure.swift */,
+				9D0E2A912153C2BE003E35C3 /* LQBookController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D508DF52149555A0055403D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9D508DFE214959F70055403D /* Global */,
+				9D508DF9214956180055403D /* Custom */,
+				9D508DF6214955630055403D /* Extension */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9D508DF6214955630055403D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D508DF7214955890055403D /* NSObject+Extension.swift */,
+				9D508E0121495A580055403D /* String+Extension.swift */,
+				9DC937BA216072EF00E71A1A /* UIView+Extension.swift */,
+				9D8D55452165081000D5C629 /* UIColor+Extension.swift */,
+				9D4B5F182165F6C30065CC25 /* UINavigationController+LQStatusBarStyle.swift */,
+				9D246C78216ED0360086784C /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9D508DF9214956180055403D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9D508DFA214956360055403D /* LQUserDefaults.swift */,
+				9D246C91216F3AD10086784C /* LQNotification.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		9D508DFE214959F70055403D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				9D508DFC2149599A0055403D /* LQGlobalProperty.swift */,
+				9D508DFF21495A160055403D /* LQGlobalMethod.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		9D52A7BA217086D00083C6B9 /* Vertical */ = {
+			isa = PBXGroup;
+			children = (
+				9D52A7BB217087170083C6B9 /* LQVerticalViewController.swift */,
+			);
+			path = Vertical;
+			sourceTree = "<group>";
+		};
+		9D52A7BF2170DD970083C6B9 /* ScrollBar */ = {
+			isa = PBXGroup;
+			children = (
+				9D52A7BD2170DD8D0083C6B9 /* LQImageScrollbar.swift */,
+				9D52A7C02170E8860083C6B9 /* LQSliderView.swift */,
+			);
+			path = ScrollBar;
+			sourceTree = "<group>";
+		};
+		9D8988A3216C3D310047CF9C /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				9D8988A4216C3D4E0047CF9C /* LQToolBar.swift */,
+				9D8988A6216C42970047CF9C /* LQToolBarDelegate.swift */,
+				9D8988A8216C441F0047CF9C /* LQOperationButton.swift */,
+				9D8988AA216C863E0047CF9C /* LQButtonOperationFactory.swift */,
+				9D8988AC216C92D60047CF9C /* LQToolbarConstant.swift */,
+				9D8988AE216CCA9A0047CF9C /* LQBookSettingBar.swift */,
+				9D8988B0216CD66D0047CF9C /* LQBookSlider.swift */,
+				9D7607C0216E208300F47464 /* LQFilterSliderControl.swift */,
+				9D246C8D216EE53D0086784C /* LQChapterMenu.swift */,
+				9D52A7B52170237C0083C6B9 /* LQTurnpageBar.swift */,
+				9D52A7B721703BA90083C6B9 /* LQProgressBar.swift */,
+			);
+			path = ToolBar;
+			sourceTree = "<group>";
+		};
+		9D8D55402164FBB000D5C629 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				9D8D55412164FBDE00D5C629 /* MBProgressHUD+LQ.h */,
+				9D8D55422164FBDE00D5C629 /* MBProgressHUD+LQ.m */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		9D8D55442165010D00D5C629 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D52A7BA217086D00083C6B9 /* Vertical */,
+				9DFCF20E215F6503008E86F7 /* Horizontal */,
+				9DC937BC2160737A00E71A1A /* LQMainCollectionCell.swift */,
+				9D246C7B216ED19B0086784C /* LQBaseViewController.swift */,
+				9DC937B82160722300E71A1A /* LQMainViewController.swift */,
+				9D508D9521489B890055403D /* LQReadViewController.swift */,
+				9D8988A1216B4FF60047CF9C /* LQToolBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9DC9379D216071B500E71A1A /* TxtBook */ = {
+			isa = PBXGroup;
+			children = (
+				9DC9379E216071B500E71A1A /* 琅琊榜.txt */,
+				9DC9379F216071B500E71A1A /* 鬼吹灯.txt */,
+				9DC937A0216071B500E71A1A /* 厚黑学.txt */,
+				9DC937A1216071B500E71A1A /* 《城春草木深》作者：余念一.txt */,
+				9DC937A2216071B500E71A1A /* 曾国藩三部曲.txt */,
+				9DC937A3216071B500E71A1A /* 《欢乐颂》作者：ane.txt */,
+				9DC937A4216071B500E71A1A /* 平凡的世界.txt */,
+				9DC937A5216071B500E71A1A /* 地狱的第19层.txt */,
+				9DC937A6216071B500E71A1A /* 《相思闲》作者：琴瑟花.txt */,
+				9DC937A7216071B500E71A1A /* 曾国藩家书.txt */,
+				9DC937A8216071B500E71A1A /* 求魔.txt */,
+				9DC937A9216071B500E71A1A /* 鬼吹灯1.txt */,
+				9DC937AA216071B500E71A1A /* 《诛仙》（校对版全本）作者：萧鼎.txt */,
+			);
+			path = TxtBook;
+			sourceTree = "<group>";
+		};
+		9DE0BE38214CB12900FE785E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D015225214E11A800855B20 /* LQReadRecordModel.swift */,
+				9D015227214E11D700855B20 /* LQReadMarkModel.swift */,
+				9D0E2A952154C1C4003E35C3 /* LQReadContent.swift */,
+				9DE0BE3B214CB18700FE785E /* LQReadChapterModel.swift */,
+				9D2CE785215DFDF2006CF792 /* LQChapterParser.swift */,
+				9DFCF211215F67F1008E86F7 /* LQReadPage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DFCF20E215F6503008E86F7 /* Horizontal */ = {
+			isa = PBXGroup;
+			children = (
+				9DFCF20C215F6372008E86F7 /* LQHorizontalViewController.swift */,
+				9DFCF20F215F6553008E86F7 /* LQTxtHorViewController.swift */,
+			);
+			path = Horizontal;
+			sourceTree = "<group>";
+		};
+		FA8A8FE0433C74CA2A23B548 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD6ED0DD1024BEDBF2822151 /* Pods-LQTxtReader.debug.xcconfig */,
+				90F075E70BF6D9A7A8C25404 /* Pods-LQTxtReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D508D8F21489B890055403D /* LQTxtReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D508DA221489B8B0055403D /* Build configuration list for PBXNativeTarget "LQTxtReader" */;
+			buildPhases = (
+				2CB62823CC67F8316C9A4A40 /* [CP] Check Pods Manifest.lock */,
+				9D508D8C21489B890055403D /* Sources */,
+				9D508D8D21489B890055403D /* Frameworks */,
+				9D508D8E21489B890055403D /* Resources */,
+				F0ACA6549016C735336A88E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LQTxtReader;
+			productName = LQTxtReader;
+			productReference = 9D508D9021489B890055403D /* LQTxtReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D508D8821489B890055403D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = liuchaoqun;
+				TargetAttributes = {
+					9D508D8F21489B890055403D = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 9D508D8B21489B890055403D /* Build configuration list for PBXProject "LQTxtReader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D508D8721489B890055403D;
+			productRefGroup = 9D508D9121489B890055403D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D508D8F21489B890055403D /* LQTxtReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D508D8E21489B890055403D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC937AD216071B500E71A1A /* 厚黑学.txt in Resources */,
+				9DC937AB216071B500E71A1A /* 琅琊榜.txt in Resources */,
+				9DC937B7216071B500E71A1A /* 《诛仙》（校对版全本）作者：萧鼎.txt in Resources */,
+				9D508D9E21489B8B0055403D /* LaunchScreen.storyboard in Resources */,
+				9DC937B2216071B500E71A1A /* 地狱的第19层.txt in Resources */,
+				9DC937B6216071B500E71A1A /* 鬼吹灯1.txt in Resources */,
+				9DC937B3216071B500E71A1A /* 《相思闲》作者：琴瑟花.txt in Resources */,
+				9D508D9B21489B8B0055403D /* Assets.xcassets in Resources */,
+				9DC937AE216071B500E71A1A /* 《城春草木深》作者：余念一.txt in Resources */,
+				9DC937B1216071B500E71A1A /* 平凡的世界.txt in Resources */,
+				9DC937B5216071B500E71A1A /* 求魔.txt in Resources */,
+				9DC937B0216071B500E71A1A /* 《欢乐颂》作者：ane.txt in Resources */,
+				9DC937B4216071B500E71A1A /* 曾国藩家书.txt in Resources */,
+				9DC937AC216071B500E71A1A /* 鬼吹灯.txt in Resources */,
+				9D508D9921489B890055403D /* Main.storyboard in Resources */,
+				9DC937AF216071B500E71A1A /* 曾国藩三部曲.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CB62823CC67F8316C9A4A40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LQTxtReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0ACA6549016C735336A88E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LQTxtReader/Pods-LQTxtReader-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LQTxtReader/Pods-LQTxtReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D508D8C21489B890055403D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D246C79216ED0360086784C /* UIViewController+Extension.swift in Sources */,
+				9D508DF8214955890055403D /* NSObject+Extension.swift in Sources */,
+				9D8988AF216CCA9A0047CF9C /* LQBookSettingBar.swift in Sources */,
+				9D8D552F2164679900D5C629 /* LQBatteryView.swift in Sources */,
+				9D52A7B62170237C0083C6B9 /* LQTurnpageBar.swift in Sources */,
+				9D52A7B821703BA90083C6B9 /* LQProgressBar.swift in Sources */,
+				9D508E0221495A580055403D /* String+Extension.swift in Sources */,
+				9DFCF20D215F6372008E86F7 /* LQHorizontalViewController.swift in Sources */,
+				9D0E2A962154C1C4003E35C3 /* LQReadContent.swift in Sources */,
+				9D8988A7216C42970047CF9C /* LQToolBarDelegate.swift in Sources */,
+				9D8988A2216B4FF60047CF9C /* LQToolBarController.swift in Sources */,
+				9D8988A5216C3D4E0047CF9C /* LQToolBar.swift in Sources */,
+				9D508DFB214956360055403D /* LQUserDefaults.swift in Sources */,
+				9D246C92216F3AD10086784C /* LQNotification.swift in Sources */,
+				9D52A7C12170E8860083C6B9 /* LQSliderView.swift in Sources */,
+				9D508DFD2149599A0055403D /* LQGlobalProperty.swift in Sources */,
+				9DE0BE3C214CB18700FE785E /* LQReadChapterModel.swift in Sources */,
+				9DC937BD2160737A00E71A1A /* LQMainCollectionCell.swift in Sources */,
+				9D8988AD216C92D60047CF9C /* LQToolbarConstant.swift in Sources */,
+				9D246C8E216EE53D0086784C /* LQChapterMenu.swift in Sources */,
+				9D8988A9216C441F0047CF9C /* LQOperationButton.swift in Sources */,
+				9D246C90216EE99A0086784C /* LQSegmentedControl.swift in Sources */,
+				9D8D55462165081000D5C629 /* UIColor+Extension.swift in Sources */,
+				9DFCF210215F6553008E86F7 /* LQTxtHorViewController.swift in Sources */,
+				9D8D55432164FBDE00D5C629 /* MBProgressHUD+LQ.m in Sources */,
+				9D8988AB216C863E0047CF9C /* LQButtonOperationFactory.swift in Sources */,
+				9DC937B92160722300E71A1A /* LQMainViewController.swift in Sources */,
+				9D8988B1216CD66D0047CF9C /* LQBookSlider.swift in Sources */,
+				9D508DA721489BD30055403D /* LQReaderView.swift in Sources */,
+				9D015228214E11D700855B20 /* LQReadMarkModel.swift in Sources */,
+				9D015226214E11A800855B20 /* LQReadRecordModel.swift in Sources */,
+				9D508D9621489B890055403D /* LQReadViewController.swift in Sources */,
+				9D508D9421489B890055403D /* AppDelegate.swift in Sources */,
+				9D246C7C216ED19B0086784C /* LQBaseViewController.swift in Sources */,
+				9DFCF212215F67F1008E86F7 /* LQReadPage.swift in Sources */,
+				9D0E2A922153C2BE003E35C3 /* LQBookController.swift in Sources */,
+				9D4B5F192165F6C30065CC25 /* UINavigationController+LQStatusBarStyle.swift in Sources */,
+				9D508E0021495A160055403D /* LQGlobalMethod.swift in Sources */,
+				9D52A7BE2170DD8D0083C6B9 /* LQImageScrollbar.swift in Sources */,
+				9D508DF42149538C0055403D /* LQReadConfigure.swift in Sources */,
+				9D8D552D2164630D00D5C629 /* LQStatusView.swift in Sources */,
+				9D7607C1216E208300F47464 /* LQFilterSliderControl.swift in Sources */,
+				9DC937BB216072EF00E71A1A /* UIView+Extension.swift in Sources */,
+				9D2CE786215DFDF2006CF792 /* LQChapterParser.swift in Sources */,
+				9D52A7BC217087170083C6B9 /* LQVerticalViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D508D9721489B890055403D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D508D9821489B890055403D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D508D9C21489B8B0055403D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D508D9D21489B8B0055403D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D508DA021489B8B0055403D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D508DA121489B8B0055403D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D508DA321489B8B0055403D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6ED0DD1024BEDBF2822151 /* Pods-LQTxtReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V47BU9V3E;
+				INFOPLIST_FILE = LQTxtReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.lacom.LQTxtReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LQTxtReader/LQTxtReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D508DA421489B8B0055403D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F075E70BF6D9A7A8C25404 /* Pods-LQTxtReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7V47BU9V3E;
+				INFOPLIST_FILE = LQTxtReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.lacom.LQTxtReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LQTxtReader/LQTxtReader-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D508D8B21489B890055403D /* Build configuration list for PBXProject "LQTxtReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D508DA021489B8B0055403D /* Debug */,
+				9D508DA121489B8B0055403D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D508DA221489B8B0055403D /* Build configuration list for PBXNativeTarget "LQTxtReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D508DA321489B8B0055403D /* Debug */,
+				9D508DA421489B8B0055403D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D508D8821489B890055403D /* Project object */;
+}
