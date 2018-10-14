@@ -43,7 +43,6 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
         tableView = UITableView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: LQTxtShowSize))
         tableView.separatorStyle = .none
         tableView.showsVerticalScrollIndicator = false
-        tableView.showsHorizontalScrollIndicator = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = LQTxtShowSize.height
@@ -51,9 +50,8 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
         tableView.register(LQTxtCell.classForCoder(), forCellReuseIdentifier: LQVerticalCellReuseIdentifier)
         self.view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.left.equalTo(self.view.snp.left).offset(LQTxtShowInsets.left)
+            make.left.right.equalTo(self.view)
             make.bottom.equalTo(self.bottomStatusView.snp.top)
-            make.width.equalTo(LQTxtShowSize.width)
             make.height.equalTo(LQTxtShowSize.height)
         }
         
@@ -63,8 +61,8 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
         topStatusView.font = LQFont_12
         self.view.addSubview(topStatusView)
         topStatusView.snp.makeConstraints { (make) in
-            make.left.equalTo(tableView.snp.left)
-            make.right.equalTo(tableView.snp.right)
+            make.left.equalTo(bottomStatusView.snp.left)
+            make.right.equalTo(bottomStatusView.snp.right)
             make.bottom.equalTo(tableView.snp.top).offset(-LQTxtShowInsets.bottom)
             make.height.equalTo(LQTxtShowInsets.top)
         }
@@ -86,8 +84,6 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
         }
     }
     
-    
-    
     private func setCurrentReadPage(pageNo: Int, chapterNo: Int) {
         if let currentReadPage = self.currentReadPage, let readBook = self.readBook {
             if currentReadPage.pageChapter != chapterNo {
@@ -106,6 +102,7 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
         tableView.reloadData()
         setCurrentReadPage(pageNo: pageNo, chapterNo: chapterNo)
         tableView.scrollToRow(at: IndexPath(row: pageNo, section: chapterNo), at: .top, animated: false)
+        adjustcontentSliderValue(forceVisible: false)
     }
     
     func readParseSuccess() {
@@ -149,8 +146,10 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
         var isSliserHidden = true
         if forceVisible {
             if 0 == self.tableView.contentSize.height || 0 == self.tableView.bounds.size.height || self.tableView.contentSize.height < 2 * self.tableView.bounds.size.height {
+                tableView.showsHorizontalScrollIndicator = true
                 isSliserHidden = true
             } else {
+                tableView.showsHorizontalScrollIndicator = false
                 isSliserHidden = false
             }
         } else {
@@ -174,6 +173,9 @@ class LQVerticalViewController: UIViewController, LQReadTxtProtocol, UITableView
     }
     
     func scrollBarContentChange(value: Float) {
+        if self.tableView.contentSize.height == 0 {
+            return
+        }
         let containerHeight = self.tableView.frame.size.height - self.tableView.contentInset.top -
             self.tableView.contentInset.bottom;
         
@@ -202,6 +204,9 @@ class LQTxtCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentLabel.frame = self.bounds
+        contentLabel.frame = CGRect(x: LQTxtShowInsets.left,
+                                    y: 0,
+                                    width: LQTxtShowSize.width,
+                                    height: self.bounds.height)
     }
 }
